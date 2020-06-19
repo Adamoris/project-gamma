@@ -11,8 +11,9 @@ public class TestingMove : MonoBehaviour
 	public Camera cam;
 	public Rigidbody2D rb;
 	public Vector2 dir;
-	Vector2 goTo;
+	List<Vector2> waypoints = new List<Vector2>();
 	Vector2 velocity;
+	Vector2 goTo;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,14 @@ public class TestingMove : MonoBehaviour
     void Update()
     {
 		if(Input.GetMouseButtonDown(1)) {
-			goTo = cam.ScreenToWorldPoint(Input.mousePosition);
+			if(Input.GetKey("left shift")) {
+				waypoints.Add(cam.ScreenToWorldPoint(Input.mousePosition));
+			} else {
+				waypoints.Clear();
+				waypoints.Add(cam.ScreenToWorldPoint(Input.mousePosition));
+			}
 		}
+		goTo = waypoints.Count > 0 ? waypoints[0] : goTo;
 		dir = new Vector2(goTo.x-rb.position.x, goTo.y-rb.position.y);
 		if(Vector2.Distance(rb.position, goTo) > 0.1) {
 			velocity.x += Math.Sign(dir.x-velocity.x)*accel*Math.Abs(dir.x);
@@ -34,6 +41,9 @@ public class TestingMove : MonoBehaviour
 				velocity.y = velocity.y/1.5f;
 			}
 			rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
+		} else if( waypoints.Count > 0) {
+			waypoints.RemoveAt(0);
 		}
+		transform.rotation = Quaternion.LookRotation(Vector3.forward, velocity);
     }
 }
