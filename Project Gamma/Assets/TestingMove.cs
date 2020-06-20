@@ -17,9 +17,8 @@ public class TestingMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		
+		cam = FindObjectOfType<Camera>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -34,15 +33,19 @@ public class TestingMove : MonoBehaviour
 		goTo = waypoints.Count > 0 ? waypoints[0] : goTo;
 		dir = new Vector2(goTo.x-rb.position.x, goTo.y-rb.position.y);
 		if(Vector2.Distance(rb.position, goTo) > 0.1) {
-			velocity.x += Math.Sign(dir.x-velocity.x)*accel*Math.Abs(dir.x);
-			velocity.y += Math.Sign(dir.y-velocity.y)*accel*Math.Abs(dir.y);
+			velocity.x += dir.x;
+			velocity.y += dir.y;
+			//velocity = dir;
 			if(velocity.magnitude > speed) {
-				velocity.x = velocity.x/1.5f;
-				velocity.y = velocity.y/1.5f;
+				velocity.Normalize();
+				velocity *= speed;
 			}
 			rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
 		} else if( waypoints.Count > 0) {
 			waypoints.RemoveAt(0);
+		} else {
+			velocity.x = 0f;
+			velocity.y = 0f;
 		}
 		transform.rotation = Quaternion.LookRotation(Vector3.forward, velocity);
     }
