@@ -14,15 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1921
-    y: 239
-    width: 1920
-    height: 997
+    x: 0
+    y: 45
+    width: 2559
+    height: 1314
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 542}
+=======
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> BasicMinimap
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 =======
@@ -40,11 +44,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1021
     y: 0
 <<<<<<< HEAD
@@ -52,9 +57,19 @@ MonoBehaviour:
     height: 375
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    x: 1432
+    y: 0
+    width: 713
+    height: 500
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> BasicMinimap
   m_ActualView: {fileID: 26}
   m_Panes:
+  - {fileID: 27}
   - {fileID: 26}
+<<<<<<< HEAD
 =======
     width: 510
 <<<<<<< HEAD
@@ -71,6 +86,9 @@ MonoBehaviour:
   - {fileID: 20}
 >>>>>>> Kyle
   m_Selected: 0
+=======
+  m_Selected: 1
+>>>>>>> BasicMinimap
   m_LastSelected: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -90,6 +108,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 572
     width: 1606
@@ -117,6 +136,15 @@ MonoBehaviour:
   controlID: 23
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    y: 764
+    width: 2145
+    height: 500
+  m_MinSize: {x: 433, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
+  vertical: 0
+  controlID: 100
+>>>>>>> BasicMinimap
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,6 +164,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 678, y: 492}
@@ -152,6 +181,14 @@ MonoBehaviour:
   controlID: 58
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    width: 2559
+    height: 1264
+  m_MinSize: {x: 734, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
+  vertical: 0
+  controlID: 51
+>>>>>>> BasicMinimap
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,11 +199,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: 
+=======
+  m_Name: ProjectSettingsWindow
+>>>>>>> BasicMinimap
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1531
     y: 0
     width: 389
@@ -176,9 +218,20 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
 <<<<<<< HEAD
   m_ActualView: {fileID: 22}
+=======
+    x: 2145
+    y: 0
+    width: 414
+    height: 1264
+  m_MinSize: {x: 301, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+>>>>>>> BasicMinimap
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 23}
+  - {fileID: 15}
   - {fileID: 14}
+<<<<<<< HEAD
   m_Selected: 0
   m_LastSelected: 1
 =======
@@ -192,6 +245,10 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 >>>>>>> Kyle
+=======
+  m_Selected: 2
+  m_LastSelected: 0
+>>>>>>> BasicMinimap
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,13 +267,18 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 396
     height: 572
+=======
+    width: 528
+    height: 764
+>>>>>>> BasicMinimap
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 23}
+  m_ActualView: {fileID: 24}
   m_Panes:
-  - {fileID: 23}
+  - {fileID: 24}
   m_Selected: 0
   m_LastSelected: 1
 =======
@@ -251,6 +313,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1021
 <<<<<<< HEAD
     height: 388
@@ -261,10 +324,17 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 10021}
 <<<<<<< HEAD
   m_ActualView: {fileID: 21}
+=======
+    width: 1432
+    height: 500
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 22}
+>>>>>>> BasicMinimap
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 22}
+  - {fileID: 19}
   - {fileID: 18}
-  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 2
 =======
@@ -294,8 +364,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 2559
+    height: 1314
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
@@ -315,7 +385,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 2559
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -336,8 +406,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 1294
+    width: 2559
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -360,6 +430,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
     height: 947
 <<<<<<< HEAD
@@ -377,6 +448,14 @@ MonoBehaviour:
   controlID: 59
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    width: 2145
+    height: 1264
+  m_MinSize: {x: 433, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
+  vertical: 1
+  controlID: 52
+>>>>>>> BasicMinimap
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,6 +475,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1606
     height: 572
@@ -419,6 +499,14 @@ MonoBehaviour:
   controlID: 60
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    width: 2145
+    height: 764
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 53
+>>>>>>> BasicMinimap
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -434,6 +522,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 379
     y: 0
     width: 1152
@@ -446,16 +535,54 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
 <<<<<<< HEAD
   m_ActualView: {fileID: 24}
+=======
+    x: 528
+    y: 0
+    width: 1617
+    height: 764
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 25}
+>>>>>>> BasicMinimap
   m_Panes:
-  - {fileID: 24}
-  - {fileID: 20}
-  - {fileID: 19}
-  - {fileID: 15}
-  - {fileID: 16}
   - {fileID: 25}
+  - {fileID: 21}
+  - {fileID: 20}
+  - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
-  m_LastSelected: 5
+  m_LastSelected: 0
 --- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: -6304849327172165113, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2145
+    y: 75
+    width: 413
+    height: 1243
+  m_ViewDataDictionary: {fileID: 0}
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -486,7 +613,7 @@ MonoBehaviour:
     m_PrefName: Preview_TilemapBrushInspector
   m_Palette: {fileID: 8691465686236020699, guid: 169db42be8ceb4fa4a160e4a6961d401,
     type: 3}
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -502,7 +629,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Audio Mixer
-    m_Image: {fileID: 5436946869657106676, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 923997255885558976, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -604,7 +731,7 @@ MonoBehaviour:
   m_ShowReferencedBuses: 1
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -620,7 +747,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animator
-    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6973158847631862895, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -668,7 +795,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -684,7 +811,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animation
-    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -8967370667835289719, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -697,7 +824,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: 15538
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -723,7 +850,7 @@ MonoBehaviour:
     height: 354
   m_ViewDataDictionary: {fileID: 0}
   m_SplitPaneLeftWidth: 300
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -752,6 +879,7 @@ MonoBehaviour:
   m_SelectedAssetPath: Assets/Mirror/Examples/Benchmarks/10k/Textures/1bitpack_kenney/colored.png
   m_SelectedSpriteRectGUID: b1402cc01f3984a37beff4e38d43d480
   m_LastUsedModuleTypeName: 
+<<<<<<< HEAD
 --- !u!114 &20
 =======
   m_ActualView: {fileID: 18}
@@ -763,6 +891,9 @@ MonoBehaviour:
   m_LastSelected: 2
 --- !u!114 &14
 >>>>>>> Kyle
+=======
+--- !u!114 &21
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -778,7 +909,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4391848389275900105, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -789,10 +920,14 @@ MonoBehaviour:
     height: 552
   m_ViewDataDictionary: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &21
 =======
 --- !u!114 &15
 >>>>>>> Kyle
+=======
+--- !u!114 &22
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -808,11 +943,12 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: -1921
     y: 841
@@ -830,6 +966,12 @@ MonoBehaviour:
     height: 353
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    x: 0
+    y: 839
+    width: 1431
+    height: 479
+>>>>>>> BasicMinimap
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -844,12 +986,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Prefabs
+=======
+    - Assets/Scripts/UI/Minimap
+>>>>>>> BasicMinimap
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets
+=======
+  - Assets/Scripts/UI/Minimap
+>>>>>>> BasicMinimap
   m_LastFoldersGridSize: 78
   m_LastProjectPath: /Users/Shared/Unity/project-gamma/Project Gamma
 =======
@@ -861,6 +1011,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 20430000
     m_LastClickedID: 17184
@@ -876,6 +1027,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000043b000000ca9a3b
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    m_SelectedIDs: 7c430000
+    m_LastClickedID: 17276
+    m_ExpandedIDs: 0000000066430000764300007e43000000ca9a3b
+>>>>>>> BasicMinimap
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -904,10 +1060,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000020430000
 =======
     m_ExpandedIDs: 00000000043b0000
 >>>>>>> Kyle
+=======
+    m_ExpandedIDs: 0000000066430000
+>>>>>>> BasicMinimap
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -935,7 +1095,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_ExpandedInstanceIDs: c6230000f63e0000da750000543600003e600000123900003a60000064e800001a61feffc23600003638000042430000d0640000b46c0000ee35000078b7fffffc390000163a00001a430000ee4c01000c490000383b0000063b0000103b00000a3b0000363c0000e23b0000b058000000000000
+>>>>>>> BasicMinimap
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -964,11 +1128,15 @@ MonoBehaviour:
   m_SkipHiddenPackages: 0
 <<<<<<< HEAD
   m_DirectoriesAreaWidth: 184
+<<<<<<< HEAD
 --- !u!114 &22
 =======
   m_DirectoriesAreaWidth: 115
 --- !u!114 &16
 >>>>>>> Kyle
+=======
+--- !u!114 &23
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -984,11 +1152,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: -315
     y: 269
@@ -999,6 +1168,12 @@ MonoBehaviour:
     width: 388
 >>>>>>> Kyle
     height: 926
+=======
+    x: 2145
+    y: 75
+    width: 413
+    height: 1243
+>>>>>>> BasicMinimap
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1010,13 +1185,17 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 12528
   m_LastVerticalScrollValue: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &23
 =======
 --- !u!114 &17
 >>>>>>> Kyle
+=======
+--- !u!114 &24
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1032,11 +1211,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: -1921
     y: 269
@@ -1052,12 +1232,19 @@ MonoBehaviour:
     height: 552
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    x: 0
+    y: 75
+    width: 527
+    height: 743
+>>>>>>> BasicMinimap
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: c63a0000
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
       m_ExpandedIDs: eceaffff08fbffff
 =======
@@ -1067,6 +1254,9 @@ MonoBehaviour:
       m_ExpandedIDs: 8cd0ffff56fbffff
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+      m_ExpandedIDs: 56fbfffff03a0000
+>>>>>>> BasicMinimap
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Waypoint
@@ -1091,11 +1281,15 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
 <<<<<<< HEAD
   m_WindowGUID: 1cd3648a1a13941e481de6623baa67a2
+<<<<<<< HEAD
 --- !u!114 &24
 =======
   m_WindowGUID: 06fe079096ece624abada31734d86ae4
 --- !u!114 &18
 >>>>>>> Kyle
+=======
+--- !u!114 &25
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1111,11 +1305,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: -1525
     y: 269
@@ -1131,6 +1326,12 @@ MonoBehaviour:
     height: 552
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    x: 528
+    y: 75
+    width: 1615
+    height: 743
+>>>>>>> BasicMinimap
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: b9a8e9c809894b743996d7c38ec027ec
@@ -1143,6 +1344,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.51262796, y: -0.07969123, z: -6.9365234}
     speed: 2
     m_Value: {x: 0.51262796, y: -0.07969123, z: -6.9365234}
@@ -1151,6 +1353,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.55220747, y: 0.5307155, z: -6.2027164}
 >>>>>>> Kyle
+=======
+    m_Target: {x: 1.9465091, y: -0.15422311, z: 0.71939373}
+    speed: 2
+    m_Value: {x: 1.9465091, y: -0.15422311, z: 0.71939373}
+>>>>>>> BasicMinimap
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1201,6 +1408,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 4.1621056
     speed: 2
 <<<<<<< HEAD
@@ -1213,6 +1421,11 @@ MonoBehaviour:
     m_Value: 4.6976666
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    m_Target: 6.19102
+    speed: 2
+    m_Value: 6.19102
+>>>>>>> BasicMinimap
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1238,10 +1451,14 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &25
 =======
 --- !u!114 &19
 >>>>>>> Kyle
+=======
+--- !u!114 &26
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1257,11 +1474,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: -1524
     y: 224
@@ -1277,6 +1495,12 @@ MonoBehaviour:
     height: 552
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    x: 1432
+    y: 839
+    width: 711
+    height: 479
+>>>>>>> BasicMinimap
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1287,6 +1511,7 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 1031, y: 580}
 =======
 <<<<<<< HEAD
@@ -1295,6 +1520,9 @@ MonoBehaviour:
   m_TargetSize: {x: 1150, y: 531}
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+  m_TargetSize: {x: 1422, y: 800}
+>>>>>>> BasicMinimap
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1309,6 +1537,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -515.5
     m_HBaseRangeMax: 515.5
@@ -1325,6 +1554,12 @@ MonoBehaviour:
     m_VBaseRangeMax: 265.5
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    m_HBaseRangeMin: -355.5
+    m_HBaseRangeMax: 355.5
+    m_VBaseRangeMin: -200
+    m_VBaseRangeMax: 200
+>>>>>>> BasicMinimap
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1333,7 +1568,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1342,6 +1577,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
       width: 1208
       height: 580
@@ -1359,12 +1595,19 @@ MonoBehaviour:
     m_Translation: {x: 575, y: 265.5}
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+      width: 711
+      height: 458
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 355.5, y: 229}
+>>>>>>> BasicMinimap
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -604
       y: -290
@@ -1391,16 +1634,29 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 1150, y: 552}
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+      x: -355.5
+      y: -229
+      width: 711
+      height: 458
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1422, y: 958}
+>>>>>>> BasicMinimap
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &26
 =======
 --- !u!114 &20
 >>>>>>> Kyle
+=======
+--- !u!114 &27
+>>>>>>> BasicMinimap
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1416,11 +1672,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3303252850963283158, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: -848
     y: 841
@@ -1438,4 +1695,10 @@ MonoBehaviour:
     height: 353
 >>>>>>> Kyle
 >>>>>>> Kyle
+=======
+    x: 1432
+    y: 839
+    width: 711
+    height: 479
+>>>>>>> BasicMinimap
   m_ViewDataDictionary: {fileID: 0}
