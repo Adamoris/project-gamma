@@ -9,14 +9,15 @@ using Mirror;
 [AddComponentMenu("")]
 public class NetworkManagerGamma : NetworkManager
 {
-    public Transform leftRacketSpawn;
-    public Transform rightRacketSpawn;
+    public GameObject ChatPrefab;
+    public Transform leftSpawn;
+    public Transform rightSpawn;
     //GameObject ball;
 
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
         // add player at correct spawn position
-        Transform start = numPlayers == 0 ? leftRacketSpawn : rightRacketSpawn;
+        Transform start = numPlayers == 0 ? leftSpawn : rightSpawn;
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);
 
