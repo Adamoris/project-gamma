@@ -9,16 +9,45 @@ public class ChatBehavior : NetworkBehaviour
 {
 
     [SerializeField] private GameObject chatUI = null;
-    [SerializeField] private TMP_Text chatText = null;
-    [SerializeField] private TMP_InputField inputField = null;
+    [SerializeField] private GameObject chatText = null;
+    [SerializeField] private GameObject inputField = null;
+    private bool canChat;
+    private Coroutine textLife;
 
     private static event Action<string> OnMessage;
 
     public override void OnStartAuthority()
     {
-        chatUI.SetActive(true);
-
+        canChat = false;
         OnMessage += HandleNewMessage;
+    }
+
+    IEnumerator TextLife(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        chatText.GetComponent<TMP_Text>().text = "";
+        chatText.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (isLocalPlayer && !canChat && Input.GetKeyDown(KeyCode.Return))
+        {
+            //if (textLife != null)
+            //{
+            //    StopCoroutine(textLife);
+            //}
+            
+            chatText.SetActive(true);
+            inputField.SetActive(true);
+            inputField.GetComponent<TMP_InputField>().ActivateInputField();
+            canChat = true;
+        }
+        else if (isLocalPlayer && canChat)
+        {
+            inputField.GetComponent<TMP_InputField>().ActivateInputField();
+        }
     }
 
     [ClientCallback]
@@ -32,7 +61,7 @@ public class ChatBehavior : NetworkBehaviour
 
     private void HandleNewMessage(string message)
     {
-        chatText.text += message;
+        chatText.GetComponent<TMP_Text>().text += message;
     }
 
     [Client]
@@ -44,7 +73,17 @@ public class ChatBehavior : NetworkBehaviour
 
         CmdSendMessage(message);
 
-        inputField.text = string.Empty;
+        inputField.GetComponent<TMP_InputField>().text = string.Empty;
+        
+        inputField.SetActive(false);
+        IEnumerator ExecuteAfterTime(float time)
+        {
+            yield return new WaitForSeconds(time);
+
+            canChat = false;
+        }
+        StartCoroutine(ExecuteAfterTime(0.1f));
+        //textLife = StartCoroutine(TextLife(5));
     }
 
     [Command]
@@ -59,6 +98,7 @@ public class ChatBehavior : NetworkBehaviour
     [ClientRpc]
     private void RpcHandleMessage(string message)
     {
+        //chatText.SetActive(true);
         OnMessage?.Invoke($"\n{message}");
     }
 }
