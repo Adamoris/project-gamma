@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
-public class StartMenu : MonoBehaviour
+public class StartMenuButtons: MonoBehaviour
 {
     public void Start()
     {
