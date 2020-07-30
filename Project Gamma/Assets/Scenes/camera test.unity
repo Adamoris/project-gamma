@@ -221,6 +221,9 @@ MonoBehaviour:
   rb: {fileID: 574147684}
   cam: {fileID: 574147681}
   cameraSpeed: 40
+  dist: 5
+  maxZoomIn: 1
+  maxZoomOut: 20
 --- !u!50 &574147684
 Rigidbody2D:
   serializedVersion: 4
