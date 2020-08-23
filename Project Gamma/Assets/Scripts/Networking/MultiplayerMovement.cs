@@ -25,77 +25,77 @@ namespace Mirror
 
 		void Update()
 		{
-			if (isLocalPlayer)
+			// movement for local player
+			if (!isLocalPlayer)
+				return;
+
+			if (Input.GetMouseButtonDown(1))
 			{
-				if (Input.GetMouseButtonDown(1))
+				if (Input.GetKey("left shift"))
 				{
-					if (Input.GetKey("left shift"))
-					{
-						waypoints.Add(cam.ScreenToWorldPoint(Input.mousePosition));
-					}
-					else
-					{
-						waypoints.Clear();
-						waypoints.Add(cam.ScreenToWorldPoint(Input.mousePosition));
-					}
+					waypoints.Add(cam.ScreenToWorldPoint(Input.mousePosition));
+				}
+				else
+				{
+					waypoints.Clear();
+					waypoints.Add(cam.ScreenToWorldPoint(Input.mousePosition));
 				}
 			}
-			
 		}
 
 		void FixedUpdate()
 		{
-			if (isLocalPlayer)
-            {
-				total = 0;
-				for (int i = 0; i < waypoints.Count; i++)
+			// movement for local player
+			if (!isLocalPlayer)
+				return;
+
+			total = 0;
+			for (int i = 0; i < waypoints.Count; i++)
+			{
+				if (i == 0)
 				{
-					if (i == 0)
-					{
-						total += Vector2.Distance(waypoints[i], rb.position);
-					}
-					else
-					{
-						total += Vector2.Distance(waypoints[i], waypoints[i - 1]);
-					}
-				}
-				if (currentspeed != total)
-				{
-					currentspeed += Math.Sign(total - currentspeed) * accel;
-				}
-				if (currentspeed < 0f)
-				{
-					currentspeed = 0f;
-				}
-				else if (currentspeed > speed)
-				{
-					currentspeed = speed;
-				}
-				goTo = waypoints.Count > 0 ? waypoints[0] : goTo;
-				dir = new Vector2(goTo.x - rb.position.x, goTo.y - rb.position.y);
-				if (Vector2.Distance(rb.position, goTo) > 0.2)
-				{
-					velocity = dir;
-					velocity.Normalize();
-					velocity *= currentspeed;
-					rb.MovePosition(rb.position + velocity * Time.deltaTime);
-				}
-				else if (waypoints.Count > 0)
-				{
-					waypoints.RemoveAt(0);
+					total += Vector2.Distance(waypoints[i], rb.position);
 				}
 				else
 				{
-					velocity.x = 0f;
-					velocity.y = 0f;
+					total += Vector2.Distance(waypoints[i], waypoints[i - 1]);
 				}
+			}
+			if (currentspeed != total)
+			{
+				currentspeed += Math.Sign(total - currentspeed) * accel;
+			}
+			if (currentspeed < 0f)
+			{
+				currentspeed = 0f;
+			}
+			else if (currentspeed > speed)
+			{
+				currentspeed = speed;
+			}
+			goTo = waypoints.Count > 0 ? waypoints[0] : goTo;
+			dir = new Vector2(goTo.x - rb.position.x, goTo.y - rb.position.y);
+			if (Vector2.Distance(rb.position, goTo) > 0.2)
+			{
+				velocity = dir;
+				velocity.Normalize();
+				velocity *= currentspeed;
+				rb.MovePosition(rb.position + velocity * Time.deltaTime);
+			}
+			else if (waypoints.Count > 0)
+			{
+				waypoints.RemoveAt(0);
+			}
+			else
+			{
+				velocity.x = 0f;
+				velocity.y = 0f;
+			}
 
-				if (velocity.magnitude != 0)
-				{
-					transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, velocity), Time.deltaTime * turnSpeed);
-				}
-            }
-			
+			if (velocity.magnitude != 0)
+			{
+				transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, velocity), Time.deltaTime * turnSpeed);
+			}
 		}
 	}
 }

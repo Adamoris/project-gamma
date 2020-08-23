@@ -9,9 +9,15 @@ public class CursorActions : MonoBehaviour
 	public GameObject waypoint;
 	
 	private void makeWaypoint() {
-		GameObject a = Instantiate(waypoint) as GameObject;
-		a.transform.position = rb.position;
+		GameObject point = Instantiate(waypoint);
+		point.transform.position = rb.position;
 	}
+
+    private void Start()
+    {
+		Cursor.visible = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
